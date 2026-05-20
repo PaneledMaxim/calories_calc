@@ -1,6 +1,9 @@
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
+from django.db.models import Q
 from django.shortcuts import redirect, render
+
+from .models import CustomUser
 
 from .forms import CustomUserChangeForm, CustomUserCreationForm
 
@@ -37,3 +40,23 @@ def edit_profile_view(request):
         form = CustomUserChangeForm(instance=request.user)
 
     return render(request, "accounts/edit_profile.html", {"form": form})
+
+
+@login_required
+def users_list_view(request):
+    query = request.GET.get("q", "").strip()
+    users = CustomUser.objects.all().order_by("username")
+
+    if query:
+        users = users.filter(
+            Q(username__icontains=query)
+            | Q(email__icontains=query)
+            | Q(first_name__icontains=query)
+            | Q(last_name__icontains=query)
+        )
+
+    context = {
+        "users": users,
+        "query": query,
+    }
+    return render(request, "accounts/users_list.html", context)

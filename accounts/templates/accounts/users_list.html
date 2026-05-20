@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Пользователи</h1>
+
+    <form method="get">
+        <input type="text" name="q" value="{{ query }}" placeholder="Поиск по пользователям">
+        <button type="submit">Найти</button>
+    </form>
+
+    {% if users %}
+        <ul>
+            {% for user in users %}
+                <li>
+                    {{ user.username }}
+                    {% if user.first_name or user.last_name %}
+                        — {{ user.first_name }} {{ user.last_name }}
+                    {% endif %}
+                    {% if user.email %}
+                        ({{ user.email }})
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Пользователи не найдены.</p>
+    {% endif %}
+{% endblock %}
