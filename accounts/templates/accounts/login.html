@@ -1,7 +1,13 @@
-<h1>Вход</h1>
+{% extends "base.html" %}
 
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Войти</button>
-</form>
+{% block content %}
+    <h1>Вход</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Войти</button>
+    </form>
+
+    <p>Еще нет аккаунта? <a href="{% url 'accounts:register' %}">Зарегистрироваться</a></p>
+{% endblock %}
