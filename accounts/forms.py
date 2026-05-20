@@ -1,3 +1,4 @@
+from django import forms
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
 from django.utils.translation import gettext_lazy as _
@@ -36,3 +37,15 @@ class CustomUserCreationForm(UserCreationForm):
             "Пароль не должен быть слишком простым и состоять только из цифр."
         )
         self.fields["password2"].help_text = _("Введите тот же пароль еще раз для проверки.")
+
+
+class CustomUserChangeForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ("username", "email", "first_name", "last_name")
+        labels = {
+            "username": _("Логин"),
+            "email": _("Электронная почта"),
+            "first_name": _("Имя"),
+            "last_name": _("Фамилия"),
+        }
