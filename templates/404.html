@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Страница не найдена{% endblock %}
+
+{% block content %}
+<section class="card">
+    <h1>Ошибка 404</h1>
+    <p>Похоже, такого адреса в проекте нет.</p>
+    <p class="muted">Проверьте ссылку или вернитесь на главную страницу.</p>
+    <div class="actions">
+        <a class="button-link" href="{% url 'accounts:home' %}">На главную</a>
+    </div>
+</section>
+{% endblock %}

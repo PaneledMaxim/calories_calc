@@ -1,28 +1,36 @@
 {% extends "base.html" %}
 
+{% block title %}Пользователи{% endblock %}
+
 {% block content %}
-    <h1>Пользователи</h1>
+<section class="card">
+    <h1>Все пользователи</h1>
+    <p class="muted">Открывать можно только свой профиль и профили людей из списка друзей.</p>
 
     <form method="get">
         <input type="text" name="q" value="{{ query }}" placeholder="Поиск по пользователям">
         <button type="submit">Найти</button>
     </form>
 
-    {% if users %}
-        <ul>
-            {% for user in users %}
-                <li>
-                    <a href="{% url 'accounts:user_detail' user.id %}">{{ user.username }}</a>
-                    {% if user.first_name or user.last_name %}
-                        — {{ user.first_name }} {{ user.last_name }}
-                    {% endif %}
-                    {% if user.email %}
-                        ({{ user.email }})
-                    {% endif %}
-                </li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <p>Пользователи не найдены.</p>
-    {% endif %}
+    <div class="grid">
+        {% for listed_user in users %}
+            <div class="user-card">
+                <strong>{{ listed_user.username }}</strong>
+                <p>{{ listed_user.first_name }} {{ listed_user.last_name }}</p>
+                <p class="muted">{{ listed_user.email }}</p>
+                {% if listed_user == user or listed_user.id in friend_ids %}
+                    <a href="{% url 'accounts:profile_detail' listed_user.username %}">Открыть профиль</a>
+                {% else %}
+                    <p class="muted">Профиль скрыт до добавления в друзья.</p>
+                    <form class="inline-form" method="post" action="{% url 'accounts:add_friend' listed_user.username %}">
+                        {% csrf_token %}
+                        <button type="submit">Добавить в друзья</button>
+                    </form>
+                {% endif %}
+            </div>
+        {% empty %}
+            <p>Пользователи не найдены.</p>
+        {% endfor %}
+    </div>
+</section>
 {% endblock %}

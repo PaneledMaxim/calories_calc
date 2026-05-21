@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Редактирование профиля{% endblock %}
+
+{% block content %}
+<section class="card">
+    <h1>Редактирование профиля</h1>
+    <p class="muted">Аутентифицированный пользователь может менять свои данные.</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Сохранить изменения</button>
+    </form>
+</section>
+{% endblock %}

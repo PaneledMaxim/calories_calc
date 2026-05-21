@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<section class="card">
+    <h1>Пользователи в Calorie Tracker</h1>
+    <p>Раздел пользователей поддерживает регистрацию, вход, профиль, друзей и восстановление пароля.</p>
+    {% if user.is_authenticated %}
+        <p>Вы вошли в систему как <strong>{{ user.username }}</strong>.</p>
+        <div class="actions">
+            <a class="button-link" href="{% url 'accounts:profile' %}">Профиль</a>
+            <a class="button-link" href="{% url 'accounts:users_list' %}">Список пользователей</a>
+        </div>
+    {% else %}
+        <p>Чтобы начать работу, зарегистрируйтесь или войдите в систему.</p>
+        <div class="actions">
+            <a class="button-link" href="{% url 'accounts:register' %}">Регистрация</a>
+            <a class="button-link" href="{% url 'accounts:login' %}">Войти</a>
+        </div>
+    {% endif %}
+</section>
+{% endblock %}

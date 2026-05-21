@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Профиль {{ profile_user.username }}{% endblock %}
+
+{% block content %}
+<section class="card stack">
+    <div>
+        <h1>Профиль {{ profile_user.username }}</h1>
+        <p class="muted">Просматривать можно только свой профиль и страницы друзей.</p>
+    </div>
+
+    <div class="grid">
+        <div class="user-card">
+            <div class="label">Имя</div>
+            <div>{{ profile_user.first_name|default:"Не указано" }}</div>
+        </div>
+        <div class="user-card">
+            <div class="label">Фамилия</div>
+            <div>{{ profile_user.last_name|default:"Не указано" }}</div>
+        </div>
+        <div class="user-card">
+            <div class="label">Электронная почта</div>
+            <div>{{ profile_user.email }}</div>
+        </div>
+        <div class="user-card">
+            <div class="label">Телефон</div>
+            <div>{{ profile_user.phone|default:"Не указан" }}</div>
+        </div>
+    </div>
+
+    <div class="actions">
+        {% if is_own_profile %}
+            <a class="button-link" href="{% url 'accounts:edit_profile' %}">Редактировать профиль</a>
+        {% elif can_add_friend %}
+            <form class="inline-form" method="post" action="{% url 'accounts:add_friend' profile_user.username %}">
+                {% csrf_token %}
+                <button type="submit">Добавить в друзья</button>
+            </form>
+        {% endif %}
+        <a class="button-link" href="{% url 'accounts:users_list' %}">К списку пользователей</a>
+    </div>
+</section>
+
+<section class="card">
+    <h2>Друзья</h2>
+    {% if friends %}
+        <div class="grid">
+            {% for friend in friends %}
+                <div class="user-card">
+                    <strong>{{ friend.username }}</strong>
+                    <p class="muted">{{ friend.email }}</p>
+                    <a href="{% url 'accounts:profile_detail' friend.username %}">Открыть профиль</a>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>Пока друзей нет.</p>
+    {% endif %}
+</section>
+{% endblock %}
