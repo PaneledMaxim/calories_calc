@@ -9,5 +9,6 @@
         <button type="submit">Войти</button>
     </form>
 
+    <p><a href="{% url 'accounts:password_reset' %}">Забыли пароль?</a></p>
     <p>Еще нет аккаунта? <a href="{% url 'accounts:register' %}">Зарегистрироваться</a></p>
 {% endblock %}
