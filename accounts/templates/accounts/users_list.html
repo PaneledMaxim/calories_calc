@@ -12,7 +12,7 @@
         <ul>
             {% for user in users %}
                 <li>
-                    {{ user.username }}
+                    <a href="{% url 'accounts:user_detail' user.id %}">{{ user.username }}</a>
                     {% if user.first_name or user.last_name %}
                         — {{ user.first_name }} {{ user.last_name }}
                     {% endif %}

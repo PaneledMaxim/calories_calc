@@ -1,7 +1,7 @@
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 
 from .models import CustomUser
 
@@ -60,3 +60,13 @@ def users_list_view(request):
         "query": query,
     }
     return render(request, "accounts/users_list.html", context)
+
+
+@login_required
+def user_detail_view(request, user_id):
+    selected_user = get_object_or_404(CustomUser, id=user_id)
+    return render(
+        request,
+        "accounts/user_detail.html",
+        {"selected_user": selected_user},
+    )

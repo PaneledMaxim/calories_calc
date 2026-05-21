@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Профиль пользователя</h1>
+
+    <p>Логин: {{ selected_user.username }}</p>
+    <p>Email: {{ selected_user.email|default:"Не указан" }}</p>
+    <p>Имя: {{ selected_user.first_name|default:"Не указано" }}</p>
+    <p>Фамилия: {{ selected_user.last_name|default:"Не указана" }}</p>
+
+    <p><a href="{% url 'accounts:users_list' %}">Вернуться к списку пользователей</a></p>
+{% endblock %}
