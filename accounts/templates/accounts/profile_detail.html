@@ -26,11 +26,36 @@
             <div class="label">Телефон</div>
             <div>{{ profile_user.phone|default:"Не указан" }}</div>
         </div>
+        <div class="user-card">
+            <div class="label">Возраст</div>
+            <div>{{ profile_user.age|default:"Не указан" }}</div>
+        </div>
+        <div class="user-card">
+            <div class="label">Рост</div>
+            <div>
+                {% if profile_user.height %}
+                    {{ profile_user.height }} см
+                {% else %}
+                    Не указан
+                {% endif %}
+            </div>
+        </div>
+        <div class="user-card">
+            <div class="label">Вес</div>
+            <div>
+                {% if profile_user.weight %}
+                    {{ profile_user.weight }} кг
+                {% else %}
+                    Не указан
+                {% endif %}
+            </div>
+        </div>
     </div>
 
     <div class="actions">
         {% if is_own_profile %}
             <a class="button-link" href="{% url 'accounts:edit_profile' %}">Редактировать профиль</a>
+            <a class="button-link" href="{% url 'accounts:password_change' %}">Сменить пароль</a>
         {% elif can_add_friend %}
             <form class="inline-form" method="post" action="{% url 'accounts:add_friend' profile_user.username %}">
                 {% csrf_token %}

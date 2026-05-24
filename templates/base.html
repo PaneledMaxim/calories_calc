@@ -151,7 +151,6 @@
                     <span class="muted">Привет, {{ user.username }}!</span>
                     <a href="{% url 'accounts:users_list' %}">Все пользователи</a>
                     <a href="{% url 'accounts:profile' %}">Мой профиль</a>
-                    <a href="{% url 'accounts:password_change' %}">Сменить пароль</a>
                     <form class="inline-form" method="post" action="{% url 'accounts:logout' %}" style="display: inline;">
                         {% csrf_token %}
                         <button type="submit">Выйти</button>

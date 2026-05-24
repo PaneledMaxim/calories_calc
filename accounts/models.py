@@ -20,6 +20,9 @@ class CustomUser(AbstractUser):
             )
         ],
     )
+    age = models.PositiveSmallIntegerField("Возраст", blank=True, null=True)
+    height = models.PositiveSmallIntegerField("Рост, см", blank=True, null=True)
+    weight = models.DecimalField("Вес, кг", max_digits=5, decimal_places=2, blank=True, null=True)
     friends = models.ManyToManyField("self", blank=True)
 
     def __str__(self):
