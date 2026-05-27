@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Дневник питания - Calorie Tracker{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Дневник питания</h1>
+    
+    <div class="actions">
+        <form method="get" style="display: inline; margin: 0;">
+            <input type="date" name="date" value="{{ selected_date|date:'Y-m-d' }}" style="padding: 6px 8px; max-width: 200px;">
+            <button type="submit">🔍 Смотреть</button>
+        </form>
+        <a class="button-link" href="{% url 'diary:add' %}">➕ Добавить запись</a>
+    </div>
+</div>
+
+<div class="card">
+    <p><strong>Дата:</strong> {{ selected_date|date:"d E Y" }}</p>
+    <p><strong>Всего калорий за день:</strong> <span style="font-weight: bold; color: #d32f2f;">{{ total_calories }} ккал</span></p>
+</div>
+
+{% if entries %}
+    <div class="stack">
+        {% regroup entries by get_meal_type_display as entries_by_meal %}
+        {% for meal_group in entries_by_meal %}
+            <div class="card">
+                <h3>{{ meal_group.grouper }}</h3>
+                <div style="border-left: 3px solid #e0e0e0; padding-left: 12px;">
+                    {% for entry in meal_group.list %}
+                        <div style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #f0f0f0;">
+                            <p style="margin: 0 0 4px 0;">
+                                <strong>{{ entry.product.name }}</strong><br>
+                                <span class="muted">{{ entry.grams }}г × {{ entry.product.calories_per_100g }} ккал/100г = <strong>{{ entry.calories }} ккал</strong></span>
+                            </p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <div class="card">
+        <p class="muted">Записей за эту дату нет. <a href="{% url 'diary:add' %}">Добавьте первую запись</a>.</p>
+    </div>
+{% endif %}
+{% endblock %}

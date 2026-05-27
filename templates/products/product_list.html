@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Продукты - Calorie Tracker{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Список продуктов</h1>
+    <p><a class="button-link" href="{% url 'products:add' %}">➕ Добавить продукт</a></p>
+</div>
+
+{% if products %}
+    <div class="stack">
+        {% for product in products %}
+            <div class="card">
+                <h3>{{ product.name }}</h3>
+                <p class="muted">{{ product.calories_per_100g }} ккал на 100г</p>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <div class="card">
+        <p class="muted">Нет добавленных продуктов. <a href="{% url 'products:add' %}">Добавьте первый продукт</a>.</p>
+    </div>
+{% endif %}
+{% endblock %}
