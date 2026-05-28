@@ -1,0 +1,194 @@
+WARNING 2026-05-28 12:17:02,525 django.request log.py (line 249) log_message Not Found: /users/asdasd
+ERROR 2026-05-28 12:24:48,705 django.request log.py (line 249) log_message Internal Server Error: /users/\u0444\u044b\u0432\u0444\u044b\u0432
+ERROR 2026-05-28 12:27:49,081 django.request log.py (line 249) log_message Internal Server Error: /users/\u0444\u044b\u0432\u0444
+ERROR 2026-05-28 12:29:49,667 django.request log.py (line 249) log_message Internal Server Error: /dssf
+ERROR 2026-05-28 12:32:43,706 django.request log.py (line 249) log_message Internal Server Error: /asdasd
+ERROR 2026-05-28 12:32:43,707 django.server log.py (line 249) log_message "GET /asdasd HTTP/1.1" 500 145
+DEBUG 2026-05-28 12:32:44,455 django.template base.py (line 1016) _resolve_lookup Exception while resolving variable 'filename' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 965, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+KeyError: 'filename'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 976, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'filename'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 982, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'filename'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 989, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [filename] in {'exc_cause': None, 'exc_cause_explicit': True, 'tb': None, 'type': 'user'}
+DEBUG 2026-05-28 12:32:44,459 django.template base.py (line 1016) _resolve_lookup Exception while resolving variable 'lineno' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 965, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+KeyError: 'lineno'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 976, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'lineno'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 982, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'lineno'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 989, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [lineno] in {'exc_cause': None, 'exc_cause_explicit': True, 'tb': None, 'type': 'user'}
+DEBUG 2026-05-28 12:32:44,461 django.template base.py (line 1016) _resolve_lookup Exception while resolving variable 'function' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 965, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+KeyError: 'function'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 976, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'function'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 982, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'function'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 989, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [function] in {'exc_cause': None, 'exc_cause_explicit': True, 'tb': None, 'type': 'user'}
+DEBUG 2026-05-28 12:32:44,490 django.template base.py (line 1016) _resolve_lookup Exception while resolving variable 'context_line' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 965, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+KeyError: 'context_line'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 976, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'context_line'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 982, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'context_line'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 989, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [context_line] in {'exc_cause': None, 'exc_cause_explicit': True, 'tb': None, 'type': 'user'}
+DEBUG 2026-05-28 12:32:44,493 django.template base.py (line 1016) _resolve_lookup Exception while resolving variable 'vars' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 965, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+KeyError: 'vars'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 976, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'vars'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 982, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'vars'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\template\base.py", line 989, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [vars] in {'exc_cause': None, 'exc_cause_explicit': True, 'tb': None, 'type': 'user'}
+WARNING 2026-05-28 13:48:16,221 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-28 13:56:51,897 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-28 14:19:17,773 django.request log.py (line 249) log_message Not Found: /favicon.ico
+INFO 2026-05-28 14:23:10,126 django.server log.py (line 249) log_message "GET /users/ HTTP/1.1" 200 5698

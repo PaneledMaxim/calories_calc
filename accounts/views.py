@@ -107,3 +107,4 @@ def add_friend_view(request, username):
 
 def custom_page_not_found(request, exception):
     return TemplateResponse(request, "404.html", status=404)
+
