@@ -164,3 +164,31 @@ Traceback (most recent call last):
     )  # missing attribute
     ^
 django.template.base.VariableDoesNotExist: Failed lookup for key [vars] in {'exc_cause': None, 'exc_cause_explicit': True, 'tb': None, 'type': 'user'}
+WARNING 2026-05-28 13:48:16,221 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-28 13:56:51,897 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-28 14:19:17,773 django.request log.py (line 249) log_message Not Found: /favicon.ico
+INFO 2026-05-28 14:23:10,126 django.server log.py (line 249) log_message "GET /users/ HTTP/1.1" 200 5698

@@ -50,8 +50,8 @@ LOGGING = {
             'propagate': False,
         },
         'django.server': {
-            'level': 'ERROR',
-            'handlers': ['file', 'mail_admins'],
+            'level': 'INFO',
+            'handlers': ['console', 'file', 'mail_admins'],
             'propagate': False,
         },
         'django': {
