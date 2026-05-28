@@ -19,13 +19,13 @@
 
 <div class="card">
     <p><strong>Дата:</strong> {{ selected_date|date:"d E Y" }}</p>
-    <p><strong>Всего калорий:</strong> <span style="color: #d32f2f; font-weight: bold;">{{ total_calories }} ккал</span></p>
+    <p><strong>Всего калорий:</strong> <span style="color: #d32f2f; font-weight: bold;">{{ total_calories|floatformat:0 }} ккал</span></p>
     <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #e0e0e0;">
         <p><strong>КБЖУ:</strong></p>
         <p style="margin: 4px 0;">
-            Белки: <span style="color: #1976d2;">{{ total_protein }}г</span> | 
-            Жиры: <span style="color: #f57c00;">{{ total_fat }}г</span> | 
-            Углеводы: <span style="color: #388e3c;">{{ total_carbs }}г</span>
+            Белки: <span style="color: #1976d2;">{{ total_protein|floatformat:1 }}г</span> | 
+            Жиры: <span style="color: #f57c00;">{{ total_fat|floatformat:1 }}г</span> | 
+            Углеводы: <span style="color: #388e3c;">{{ total_carbs|floatformat:1 }}г</span>
         </p>
     </div>
 </div>
@@ -45,10 +45,10 @@
                                 </p>
                                 <p style="margin: 0; font-size: 0.9em; color: #666;">
                                     {{ entry.grams }}г | 
-                                    <span style="color: #d32f2f;">{{ entry.calories }} ккал</span> | 
-                                    Б: <span style="color: #1976d2;">{{ entry.protein }}г</span> 
-                                    Ж: <span style="color: #f57c00;">{{ entry.fat }}г</span> 
-                                    У: <span style="color: #388e3c;">{{ entry.carbs }}г</span>
+                                    <span style="color: #d32f2f;">{{ entry.calories|floatformat:0 }} ккал</span> | 
+                                    Б: <span style="color: #1976d2;">{{ entry.protein|floatformat:1 }}г</span> 
+                                    Ж: <span style="color: #f57c00;">{{ entry.fat|floatformat:1 }}г</span> 
+                                    У: <span style="color: #388e3c;">{{ entry.carbs|floatformat:1 }}г</span>
                                 </p>
                             </div>
                             {% if is_own_diary %}
