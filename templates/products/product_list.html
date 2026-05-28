@@ -27,8 +27,8 @@
                         <td style="color: #666;">{{ product.protein_per_100g }}/{{ product.fat_per_100g }}/{{ product.carbs_per_100g }}</td>
                         <td>
                             {% if product.can_edit %}
-                                <a href="{% url 'products:edit' product.id %}" style="color: #1976d2; text-decoration: none; margin-right: 10px;">✎ Редакт.</a>
-                                <a href="{% url 'products:delete' product.id %}" style="color: #d32f2f; text-decoration: none;">✕ Удалить</a>
+                                <a href="{% url 'products:edit' product.id %}" style="color: #1976d2; text-decoration: none; margin-right: 10px;">Редакт.</a>
+                                <a href="{% url 'products:delete' product.id %}" style="color: #d32f2f; text-decoration: none;">Удалить</a>
                             {% endif %}
                         </td>
                     </tr>

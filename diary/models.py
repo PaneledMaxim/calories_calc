@@ -22,3 +22,15 @@ class FoodEntry(models.Model):
     @property
     def calories(self):
         return round(self.product.calories_per_100g * self.grams / 100)
+
+    @property
+    def protein(self):
+        return round(float(self.product.protein_per_100g) * self.grams / 100, 1)
+
+    @property
+    def fat(self):
+        return round(float(self.product.fat_per_100g) * self.grams / 100, 1)
+
+    @property
+    def carbs(self):
+        return round(float(self.product.carbs_per_100g) * self.grams / 100, 1)

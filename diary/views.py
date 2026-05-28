@@ -29,12 +29,18 @@ def diary_view(request, username=None):
     
     entries = FoodEntry.objects.filter(user=viewed_user, date=selected_date).order_by('meal_type')
     total_calories = sum(entry.calories for entry in entries)
+    total_protein = sum(entry.protein for entry in entries)
+    total_fat = sum(entry.fat for entry in entries)
+    total_carbs = sum(entry.carbs for entry in entries)
     is_own_diary = viewed_user == request.user
 
     return render(request, 'diary/diary.html', {
         'entries': entries,
         'selected_date': selected_date,
         'total_calories': total_calories,
+        'total_protein': total_protein,
+        'total_fat': total_fat,
+        'total_carbs': total_carbs,
         'viewed_user': viewed_user,
         'is_own_diary': is_own_diary,
     })
@@ -53,3 +59,14 @@ def add_food_entry_view(request):
         form = FoodEntryForm()
 
     return render(request, 'diary/add_entry.html', {'form': form})
+
+
+@login_required
+def delete_food_entry_view(request, entry_id):
+    entry = get_object_or_404(FoodEntry, id=entry_id)
+    
+    if entry.user != request.user:
+        raise PermissionDenied("Вы можете удалять только свои записи.")
+    
+    entry.delete()
+    return redirect('diary:diary')

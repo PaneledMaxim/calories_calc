@@ -19,7 +19,15 @@
 
 <div class="card">
     <p><strong>Дата:</strong> {{ selected_date|date:"d E Y" }}</p>
-    <p><strong>Всего калорий за день:</strong> <span style="font-weight: bold; color: #d32f2f;">{{ total_calories }} ккал</span></p>
+    <p><strong>Всего калорий:</strong> <span style="color: #d32f2f; font-weight: bold;">{{ total_calories }} ккал</span></p>
+    <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #e0e0e0;">
+        <p><strong>КБЖУ:</strong></p>
+        <p style="margin: 4px 0;">
+            Белки: <span style="color: #1976d2;">{{ total_protein }}г</span> | 
+            Жиры: <span style="color: #f57c00;">{{ total_fat }}г</span> | 
+            Углеводы: <span style="color: #388e3c;">{{ total_carbs }}г</span>
+        </p>
+    </div>
 </div>
 
 {% if entries %}
@@ -30,11 +38,24 @@
                 <h3>{{ meal_group.grouper }}</h3>
                 <div style="border-left: 3px solid #e0e0e0; padding-left: 12px;">
                     {% for entry in meal_group.list %}
-                        <div style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #f0f0f0;">
-                            <p style="margin: 0 0 4px 0;">
-                                <strong>{{ entry.product.name }}</strong><br>
-                                <span class="muted">{{ entry.grams }}г × {{ entry.product.calories_per_100g }} ккал/100г = <strong>{{ entry.calories }} ккал</strong></span>
-                            </p>
+                        <div style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div style="flex: 1;">
+                                <p style="margin: 0 0 4px 0;">
+                                    <strong>{{ entry.product.name }}</strong>
+                                </p>
+                                <p style="margin: 0; font-size: 0.9em; color: #666;">
+                                    {{ entry.grams }}г | 
+                                    <span style="color: #d32f2f;">{{ entry.calories }} ккал</span> | 
+                                    Б: <span style="color: #1976d2;">{{ entry.protein }}г</span> 
+                                    Ж: <span style="color: #f57c00;">{{ entry.fat }}г</span> 
+                                    У: <span style="color: #388e3c;">{{ entry.carbs }}г</span>
+                                </p>
+                            </div>
+                            {% if is_own_diary %}
+                            <div style="margin-left: 10px; white-space: nowrap;">
+                                <a href="{% url 'diary:delete_entry' entry.id %}" style="color: #d32f2f; text-decoration: none; font-size: 0.9em;">Удалить</a>
+                            </div>
+                            {% endif %}
                         </div>
                     {% endfor %}
                 </div>
