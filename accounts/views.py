@@ -105,6 +105,21 @@ def add_friend_view(request, username):
     return redirect("accounts:profile_detail", username=friend.username)
 
 
+@login_required
+def remove_friend_view(request, username):
+    friend = get_object_or_404(CustomUser, username=username)
+
+    if friend == request.user:
+        messages.warning(request, "Нельзя удалить из друзей самого себя.")
+    elif request.user.friends.filter(pk=friend.pk).exists():
+        request.user.friends.remove(friend)
+        messages.success(request, f"Пользователь {friend.username} удален из друзей.")
+    else:
+        messages.warning(request, f"Пользователь {friend.username} не находится в друзьях.")
+
+    return redirect("accounts:users_list")
+
+
 def custom_page_not_found(request, exception):
     return TemplateResponse(request, "404.html", status=404)
 

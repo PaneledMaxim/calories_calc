@@ -192,3 +192,421 @@ Traceback (most recent call last):
 django.core.exceptions.PermissionDenied: �� ������ ������������� ������ ���� ����������� �������� � ������� ����� ������.
 WARNING 2026-05-28 14:19:17,773 django.request log.py (line 249) log_message Not Found: /favicon.ico
 INFO 2026-05-28 14:23:10,126 django.server log.py (line 249) log_message "GET /users/ HTTP/1.1" 200 5698
+INFO 2026-05-28 21:30:34,144 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4149
+INFO 2026-05-28 21:30:36,955 django.server basehttp.py (line 212) log_message "GET /register/ HTTP/1.1" 200 6595
+INFO 2026-05-28 21:31:03,303 django.server basehttp.py (line 212) log_message "POST /register/ HTTP/1.1" 200 6780
+INFO 2026-05-28 21:31:21,480 django.server basehttp.py (line 212) log_message "POST /register/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:31:21,489 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4587
+INFO 2026-05-28 21:31:23,079 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 5278
+INFO 2026-05-28 21:31:24,477 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 4688
+INFO 2026-05-28 21:31:25,021 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 4778
+INFO 2026-05-28 21:31:26,023 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:31:26,056 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 5854
+INFO 2026-05-28 21:31:28,434 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 5278
+INFO 2026-05-28 21:31:34,116 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 5278
+INFO 2026-05-28 21:33:14,717 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4587
+INFO 2026-05-28 21:33:18,797 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 4688
+INFO 2026-05-28 21:33:19,228 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 4778
+INFO 2026-05-28 21:33:20,221 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:33:20,231 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 5854
+INFO 2026-05-28 21:37:53,585 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4587
+INFO 2026-05-28 21:37:56,383 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 5278
+INFO 2026-05-28 21:37:57,807 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 4778
+INFO 2026-05-28 21:38:00,275 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:38:00,288 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 5854
+INFO 2026-05-28 21:38:02,137 django.server basehttp.py (line 212) log_message "GET /password-change/ HTTP/1.1" 200 5488
+INFO 2026-05-28 21:38:03,910 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:38:03,921 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 5854
+INFO 2026-05-28 21:38:05,309 django.server basehttp.py (line 212) log_message "GET /profile/edit/ HTTP/1.1" 200 5613
+INFO 2026-05-28 21:38:08,203 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:38:08,213 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 5854
+INFO 2026-05-28 21:38:11,673 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 4778
+INFO 2026-05-28 21:38:12,128 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 4688
+INFO 2026-05-28 21:38:14,731 django.server basehttp.py (line 212) log_message "GET /products/add/ HTTP/1.1" 200 5426
+INFO 2026-05-28 21:38:35,313 django.server basehttp.py (line 212) log_message "POST /products/add/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:38:35,322 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5584
+INFO 2026-05-28 21:38:44,858 django.server basehttp.py (line 212) log_message "GET /products/1/edit/ HTTP/1.1" 200 5477
+INFO 2026-05-28 21:38:48,037 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5584
+INFO 2026-05-28 21:38:49,036 django.server basehttp.py (line 212) log_message "GET /products/1/delete/ HTTP/1.1" 200 4812
+INFO 2026-05-28 21:38:51,155 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5584
+INFO 2026-05-28 21:38:51,934 django.server basehttp.py (line 212) log_message "GET /products/1/delete/ HTTP/1.1" 200 4812
+INFO 2026-05-28 21:38:52,964 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5584
+INFO 2026-05-28 21:38:54,286 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 5278
+INFO 2026-05-28 21:38:57,795 django.server basehttp.py (line 212) log_message "GET /diary/add/ HTTP/1.1" 200 5246
+INFO 2026-05-28 21:39:16,494 django.server basehttp.py (line 212) log_message "POST /diary/add/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:39:16,504 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 6706
+INFO 2026-05-28 21:39:21,695 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5584
+INFO 2026-05-28 21:39:24,476 django.server basehttp.py (line 212) log_message "GET /products/1/edit/ HTTP/1.1" 200 5477
+INFO 2026-05-28 21:39:27,976 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5584
+INFO 2026-05-28 21:39:33,079 django.server basehttp.py (line 212) log_message "GET /products/1/edit/ HTTP/1.1" 200 5477
+INFO 2026-05-28 21:39:36,281 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5584
+INFO 2026-05-28 21:39:42,190 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 6706
+INFO 2026-05-28 21:39:46,861 django.server basehttp.py (line 212) log_message "GET /diary/add/ HTTP/1.1" 200 5246
+INFO 2026-05-28 21:39:50,074 django.server basehttp.py (line 212) log_message "POST /diary/add/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:39:50,086 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 8041
+INFO 2026-05-28 21:39:53,518 django.server basehttp.py (line 212) log_message "GET /diary/add/ HTTP/1.1" 200 5246
+INFO 2026-05-28 21:39:56,551 django.server basehttp.py (line 212) log_message "POST /diary/add/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:39:56,562 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 9597
+INFO 2026-05-28 21:40:27,248 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4587
+INFO 2026-05-28 21:40:41,226 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 4778
+INFO 2026-05-28 21:40:43,784 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 9597
+INFO 2026-05-28 21:40:44,361 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:40:44,371 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 5854
+INFO 2026-05-28 21:40:46,552 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4587
+INFO 2026-05-28 21:40:55,588 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 9597
+INFO 2026-05-28 21:40:56,092 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5584
+INFO 2026-05-28 21:40:56,438 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 4778
+INFO 2026-05-28 21:40:57,026 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:40:57,035 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 5854
+INFO 2026-05-28 21:42:06,385 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4587
+INFO 2026-05-28 21:44:54,865 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4757
+INFO 2026-05-28 21:45:34,332 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5584
+INFO 2026-05-28 21:45:36,051 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4757
+INFO 2026-05-28 21:46:12,417 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5584
+INFO 2026-05-28 21:46:13,393 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4757
+INFO 2026-05-28 21:47:19,284 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4744
+INFO 2026-05-28 21:47:31,729 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5568
+INFO 2026-05-28 21:47:34,393 django.server basehttp.py (line 212) log_message "GET /products/add/ HTTP/1.1" 200 5410
+INFO 2026-05-28 21:47:41,148 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5568
+INFO 2026-05-28 21:47:41,756 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 4762
+INFO 2026-05-28 21:47:43,643 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 9581
+INFO 2026-05-28 21:47:44,697 django.server basehttp.py (line 212) log_message "GET /diary/add/ HTTP/1.1" 200 5230
+INFO 2026-05-28 21:47:46,612 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 9581
+INFO 2026-05-28 21:47:50,272 django.server basehttp.py (line 212) log_message "GET /diary/add/ HTTP/1.1" 200 5230
+INFO 2026-05-28 21:49:47,346 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 9581
+INFO 2026-05-28 21:49:49,838 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 4762
+INFO 2026-05-28 21:49:51,246 django.server basehttp.py (line 212) log_message "GET /users/?q= HTTP/1.1" 200 4762
+INFO 2026-05-28 21:49:52,403 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 5838
+INFO 2026-05-28 21:49:56,536 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5568
+INFO 2026-05-28 21:49:57,484 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:49:57,494 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 5838
+INFO 2026-05-28 21:49:57,758 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 4762
+INFO 2026-05-28 21:50:03,362 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:50:03,369 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 5838
+INFO 2026-05-28 21:50:04,291 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 4762
+INFO 2026-05-28 21:50:06,007 django.server basehttp.py (line 212) log_message "POST /logout/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:50:06,025 django.server basehttp.py (line 212) log_message "GET /login/ HTTP/1.1" 200 4309
+INFO 2026-05-28 21:50:08,181 django.server basehttp.py (line 212) log_message "GET /password-reset/ HTTP/1.1" 200 4286
+INFO 2026-05-28 21:50:10,073 django.server basehttp.py (line 212) log_message "GET /register/ HTTP/1.1" 200 6595
+INFO 2026-05-28 21:50:42,152 django.server basehttp.py (line 212) log_message "POST /register/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:50:42,159 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4744
+INFO 2026-05-28 21:50:44,715 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5444
+INFO 2026-05-28 21:50:45,901 django.server basehttp.py (line 212) log_message "POST /profile/Maxim/add-friend/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:50:45,915 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 6912
+INFO 2026-05-28 21:50:51,076 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5266
+INFO 2026-05-28 21:50:51,740 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:50:51,750 django.server basehttp.py (line 212) log_message "GET /profile/lexys/ HTTP/1.1" 200 6494
+INFO 2026-05-28 21:50:53,023 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5055
+INFO 2026-05-28 21:50:56,599 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 6727
+INFO 2026-05-28 21:50:58,025 django.server basehttp.py (line 212) log_message "POST /profile/Maxim/remove-friend/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:50:58,036 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5627
+INFO 2026-05-28 21:51:03,091 django.server basehttp.py (line 212) log_message "POST /profile/Maxim/add-friend/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:51:03,102 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 6912
+INFO 2026-05-28 21:51:04,613 django.server basehttp.py (line 212) log_message "POST /profile/Maxim/remove-friend/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:51:04,626 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5627
+INFO 2026-05-28 21:51:06,419 django.server basehttp.py (line 212) log_message "POST /profile/Maxim/add-friend/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:51:06,431 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 6912
+INFO 2026-05-28 21:51:08,892 django.server basehttp.py (line 212) log_message "POST /profile/Maxim/remove-friend/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:51:08,903 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5627
+INFO 2026-05-28 21:51:13,596 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 5262
+INFO 2026-05-28 21:51:14,127 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5266
+INFO 2026-05-28 21:51:14,541 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5444
+INFO 2026-05-28 21:51:15,451 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:51:15,462 django.server basehttp.py (line 212) log_message "GET /profile/lexys/ HTTP/1.1" 200 5840
+INFO 2026-05-28 21:51:17,383 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 5262
+INFO 2026-05-28 21:51:25,291 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5444
+INFO 2026-05-28 21:51:26,279 django.server basehttp.py (line 212) log_message "POST /profile/Maxim/add-friend/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:51:26,290 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 6912
+INFO 2026-05-28 21:51:27,873 django.server basehttp.py (line 212) log_message "GET /diary/Maxim/ HTTP/1.1" 200 8631
+INFO 2026-05-28 21:51:38,985 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5055
+INFO 2026-05-28 21:51:40,997 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 6727
+INFO 2026-05-28 21:51:42,281 django.server basehttp.py (line 212) log_message "POST /profile/Maxim/remove-friend/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:51:42,292 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5627
+WARNING 2026-05-28 21:51:45,421 django.request log.py (line 246) log_response Forbidden (Permission denied): /diary/Maxim/
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\maxgu\OneDrive\Рабочий стол\учеба\3 курс\яп\proj4\diary\views.py", line 19, in diary_view
+    raise PermissionDenied("Вы можете просматривать дневник только своих друзей.")
+django.core.exceptions.PermissionDenied: Вы можете просматривать дневник только своих друзей.
+WARNING 2026-05-28 21:51:45,462 django.server basehttp.py (line 212) log_message "GET /diary/Maxim/ HTTP/1.1" 403 135
+INFO 2026-05-28 21:51:49,330 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5444
+DEBUG 2026-05-28 21:51:54,074 django.template base.py (line 930) _resolve_lookup Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 702, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'logout/' [name='logout']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/' [name='password_change']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/done/' [name='password_change_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/' [name='password_reset']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/done/' [name='password_reset_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/<uidb64>/<token>/' [name='password_reset_confirm']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/done/' [name='password_reset_complete']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/' [name='profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/edit/' [name='edit_profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/' [name='profile_detail']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/add-friend/' [name='add_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/remove-friend/' [name='remove_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'users/' [name='users_list']>], [<URLResolver <module 'products.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\products\\urls.py'> (products:products) 'products/'>], [<URLResolver <module 'diary.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\diary\\urls.py'> (diary:diary) 'diary/'>]], 'path': 'users/aaaa'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+DEBUG 2026-05-28 21:51:54,102 django.template base.py (line 930) _resolve_lookup Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 702, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'logout/' [name='logout']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/' [name='password_change']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/done/' [name='password_change_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/' [name='password_reset']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/done/' [name='password_reset_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/<uidb64>/<token>/' [name='password_reset_confirm']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/done/' [name='password_reset_complete']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/' [name='profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/edit/' [name='edit_profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/' [name='profile_detail']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/add-friend/' [name='add_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/remove-friend/' [name='remove_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'users/' [name='users_list']>], [<URLResolver <module 'products.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\products\\urls.py'> (products:products) 'products/'>], [<URLResolver <module 'diary.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\diary\\urls.py'> (diary:diary) 'diary/'>]], 'path': 'users/aaaa'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'products.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\products\\urls.py'> (products:products) 'products/'>
+DEBUG 2026-05-28 21:51:54,103 django.template base.py (line 930) _resolve_lookup Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 702, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'logout/' [name='logout']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/' [name='password_change']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/done/' [name='password_change_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/' [name='password_reset']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/done/' [name='password_reset_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/<uidb64>/<token>/' [name='password_reset_confirm']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/done/' [name='password_reset_complete']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/' [name='profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/edit/' [name='edit_profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/' [name='profile_detail']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/add-friend/' [name='add_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/remove-friend/' [name='remove_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'users/' [name='users_list']>], [<URLResolver <module 'products.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\products\\urls.py'> (products:products) 'products/'>], [<URLResolver <module 'diary.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\diary\\urls.py'> (diary:diary) 'diary/'>]], 'path': 'users/aaaa'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'diary.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\diary\\urls.py'> (diary:diary) 'diary/'>
+WARNING 2026-05-28 21:51:54,104 django.request log.py (line 246) log_response Not Found: /users/aaaa
+WARNING 2026-05-28 21:51:54,104 django.server basehttp.py (line 212) log_message "GET /users/aaaa HTTP/1.1" 404 5302
+INFO 2026-05-28 21:51:58,980 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 5262
+INFO 2026-05-28 21:52:00,176 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4744
+INFO 2026-05-28 21:52:01,180 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5266
+INFO 2026-05-28 21:52:02,349 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4744
+INFO 2026-05-28 21:52:05,261 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:52:05,268 django.server basehttp.py (line 212) log_message "GET /profile/lexys/ HTTP/1.1" 200 5840
+DEBUG 2026-05-28 21:52:11,418 django.template base.py (line 930) _resolve_lookup Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 702, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'logout/' [name='logout']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/' [name='password_change']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/done/' [name='password_change_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/' [name='password_reset']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/done/' [name='password_reset_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/<uidb64>/<token>/' [name='password_reset_confirm']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/done/' [name='password_reset_complete']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/' [name='profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/edit/' [name='edit_profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/' [name='profile_detail']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/add-friend/' [name='add_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/remove-friend/' [name='remove_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'users/' [name='users_list']>], [<URLResolver <module 'products.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\products\\urls.py'> (products:products) 'products/'>], [<URLResolver <module 'diary.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\diary\\urls.py'> (diary:diary) 'diary/'>]], 'path': 'aaa'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+DEBUG 2026-05-28 21:52:11,419 django.template base.py (line 930) _resolve_lookup Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 702, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'logout/' [name='logout']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/' [name='password_change']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/done/' [name='password_change_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/' [name='password_reset']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/done/' [name='password_reset_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/<uidb64>/<token>/' [name='password_reset_confirm']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/done/' [name='password_reset_complete']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/' [name='profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/edit/' [name='edit_profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/' [name='profile_detail']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/add-friend/' [name='add_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/remove-friend/' [name='remove_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'users/' [name='users_list']>], [<URLResolver <module 'products.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\products\\urls.py'> (products:products) 'products/'>], [<URLResolver <module 'diary.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\diary\\urls.py'> (diary:diary) 'diary/'>]], 'path': 'aaa'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'products.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\products\\urls.py'> (products:products) 'products/'>
+DEBUG 2026-05-28 21:52:11,419 django.template base.py (line 930) _resolve_lookup Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 702, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'logout/' [name='logout']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/' [name='password_change']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-change/done/' [name='password_change_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/' [name='password_reset']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'password-reset/done/' [name='password_reset_done']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/<uidb64>/<token>/' [name='password_reset_confirm']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'reset/done/' [name='password_reset_complete']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/' [name='profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/edit/' [name='edit_profile']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/' [name='profile_detail']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/add-friend/' [name='add_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'profile/<slug:username>/remove-friend/' [name='remove_friend']>], [<URLResolver <module 'accounts.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\accounts\\urls.py'> (accounts:accounts) ''>, <URLPattern 'users/' [name='users_list']>], [<URLResolver <module 'products.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\products\\urls.py'> (products:products) 'products/'>], [<URLResolver <module 'diary.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\diary\\urls.py'> (diary:diary) 'diary/'>]], 'path': 'aaa'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'diary.urls' from 'C:\\Users\\maxgu\\OneDrive\\Рабочий стол\\учеба\\3 курс\\яп\\proj4\\diary\\urls.py'> (diary:diary) 'diary/'>
+WARNING 2026-05-28 21:52:11,420 django.request log.py (line 246) log_response Not Found: /aaa
+WARNING 2026-05-28 21:52:11,420 django.server basehttp.py (line 212) log_message "GET /aaa HTTP/1.1" 404 5281
+WARNING 2026-05-28 21:52:50,903 django.request log.py (line 246) log_response Not Found: /aaa
+WARNING 2026-05-28 21:52:50,903 django.server basehttp.py (line 212) log_message "GET /aaa HTTP/1.1" 404 4380
+INFO 2026-05-28 21:52:53,116 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4744
+INFO 2026-05-28 21:52:55,727 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5444
+INFO 2026-05-28 21:52:56,723 django.server basehttp.py (line 212) log_message "POST /profile/Maxim/add-friend/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:52:56,738 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 6912
+INFO 2026-05-28 21:52:57,672 django.server basehttp.py (line 212) log_message "GET /diary/Maxim/ HTTP/1.1" 200 8631
+INFO 2026-05-28 21:52:59,533 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5055
+INFO 2026-05-28 21:53:00,530 django.server basehttp.py (line 212) log_message "GET /profile/Maxim/ HTTP/1.1" 200 6727
+INFO 2026-05-28 21:53:01,430 django.server basehttp.py (line 212) log_message "POST /profile/Maxim/remove-friend/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:53:01,441 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5627
+INFO 2026-05-28 21:53:02,267 django.server basehttp.py (line 212) log_message "GET /products/ HTTP/1.1" 200 5266
+WARNING 2026-05-28 21:53:03,665 django.request log.py (line 246) log_response Forbidden (Permission denied): /diary/Maxim/
+Traceback (most recent call last):
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maxgu\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\maxgu\OneDrive\Рабочий стол\учеба\3 курс\яп\proj4\diary\views.py", line 19, in diary_view
+    raise PermissionDenied("Вы можете просматривать дневник только своих друзей.")
+django.core.exceptions.PermissionDenied: Вы можете просматривать дневник только своих друзей.
+WARNING 2026-05-28 21:53:03,666 django.server basehttp.py (line 212) log_message "GET /diary/Maxim/ HTTP/1.1" 403 135
+INFO 2026-05-28 21:53:06,122 django.server basehttp.py (line 212) log_message "GET /diary/ HTTP/1.1" 200 5262
+INFO 2026-05-28 21:53:07,381 django.server basehttp.py (line 212) log_message "GET / HTTP/1.1" 200 4744
+INFO 2026-05-28 21:53:13,101 django.server basehttp.py (line 212) log_message "GET /profile/ HTTP/1.1" 302 0
+INFO 2026-05-28 21:53:13,109 django.server basehttp.py (line 212) log_message "GET /profile/lexys/ HTTP/1.1" 200 5840
+INFO 2026-05-28 21:53:16,644 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5444
+INFO 2026-05-28 21:53:18,706 django.server basehttp.py (line 212) log_message "GET /profile/lexys/ HTTP/1.1" 200 5840
+INFO 2026-05-28 21:53:23,075 django.server basehttp.py (line 212) log_message "GET /users/ HTTP/1.1" 200 5444

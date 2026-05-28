@@ -17,6 +17,7 @@ from .views import (
     profile_view,
     profile_detail_view,
     register_view,
+    remove_friend_view,
     users_list_view,
 )
 
@@ -72,5 +73,6 @@ urlpatterns = [
     path("profile/edit/", edit_profile_view, name="edit_profile"),
     path("profile/<slug:username>/", profile_detail_view, name="profile_detail"),
     path("profile/<slug:username>/add-friend/", add_friend_view, name="add_friend"),
+    path("profile/<slug:username>/remove-friend/", remove_friend_view, name="remove_friend"),
     path("users/", users_list_view, name="users_list"),
 ]

@@ -63,6 +63,10 @@
             </form>
         {% elif is_friend %}
             <a class="button-link" href="{% url 'diary:friend_diary' profile_user.username %}">Просмотреть дневник</a>
+            <form class="inline-form" method="post" action="{% url 'accounts:remove_friend' profile_user.username %}">
+                {% csrf_token %}
+                <button type="submit">Удалить из друзей</button>
+            </form>
         {% endif %}
         <a class="button-link" href="{% url 'accounts:users_list' %}">К списку пользователей</a>
     </div>
@@ -78,6 +82,10 @@
                     <p class="muted">{{ friend.email }}</p>
                     <a href="{% url 'accounts:profile_detail' friend.username %}">Профиль</a>
                     <a href="{% url 'diary:friend_diary' friend.username %}">Дневник</a>
+                    <form class="inline-form" method="post" action="{% url 'accounts:remove_friend' friend.username %}">
+                        {% csrf_token %}
+                        <button type="submit">Удалить</button>
+                    </form>
                 </div>
             {% endfor %}
         </div>

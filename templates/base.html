@@ -149,10 +149,10 @@
             <div>
                 {% if user.is_authenticated %}
                     <span class="muted">Привет, {{ user.username }}!</span>
-                    <a href="{% url 'diary:diary' %}">📓 Дневник</a>
-                    <a href="{% url 'products:list' %}">🥗 Продукты</a>
-                    <a href="{% url 'accounts:users_list' %}">👥 Пользователи</a>
-                    <a href="{% url 'accounts:profile' %}">👤 Профиль</a>
+                    <a href="{% url 'diary:diary' %}"> Дневник</a>
+                    <a href="{% url 'products:list' %}"> Продукты</a>
+                    <a href="{% url 'accounts:users_list' %}"> Пользователи</a>
+                    <a href="{% url 'accounts:profile' %}"> Профиль</a>
                     <form class="inline-form" method="post" action="{% url 'accounts:logout' %}" style="display: inline;">
                         {% csrf_token %}
                         <button type="submit">Выйти</button>
