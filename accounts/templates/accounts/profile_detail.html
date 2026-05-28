@@ -61,6 +61,8 @@
                 {% csrf_token %}
                 <button type="submit">Добавить в друзья</button>
             </form>
+        {% elif is_friend %}
+            <a class="button-link" href="{% url 'diary:friend_diary' profile_user.username %}">Просмотреть дневник</a>
         {% endif %}
         <a class="button-link" href="{% url 'accounts:users_list' %}">К списку пользователей</a>
     </div>
@@ -74,7 +76,8 @@
                 <div class="user-card">
                     <strong>{{ friend.username }}</strong>
                     <p class="muted">{{ friend.email }}</p>
-                    <a href="{% url 'accounts:profile_detail' friend.username %}">Открыть профиль</a>
+                    <a href="{% url 'accounts:profile_detail' friend.username %}">Профиль</a>
+                    <a href="{% url 'diary:friend_diary' friend.username %}">Дневник</a>
                 </div>
             {% endfor %}
         </div>

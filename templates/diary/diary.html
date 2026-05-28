@@ -4,14 +4,16 @@
 
 {% block content %}
 <div class="card">
-    <h1>Дневник питания</h1>
+    <h1>Дневник питания{% if not is_own_diary %} — {{ viewed_user.username }}{% endif %}</h1>
     
     <div class="actions">
         <form method="get" style="display: inline; margin: 0;">
             <input type="date" name="date" value="{{ selected_date|date:'Y-m-d' }}" style="padding: 6px 8px; max-width: 200px;">
-            <button type="submit">🔍 Смотреть</button>
+            <button type="submit">Смотреть</button>
         </form>
-        <a class="button-link" href="{% url 'diary:add' %}">➕ Добавить запись</a>
+        {% if is_own_diary %}
+        <a class="button-link" href="{% url 'diary:add' %}">Добавить запись</a>
+        {% endif %}
     </div>
 </div>
 
@@ -41,7 +43,7 @@
     </div>
 {% else %}
     <div class="card">
-        <p class="muted">Записей за эту дату нет. <a href="{% url 'diary:add' %}">Добавьте первую запись</a>.</p>
+        <p class="muted">Записей за эту дату нет.{% if is_own_diary %} <a href="{% url 'diary:add' %}">Добавьте первую запись</a>.{% endif %}</p>
     </div>
 {% endif %}
 {% endblock %}

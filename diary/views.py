@@ -1,13 +1,25 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .models import FoodEntry
 from .forms import FoodEntryForm
 from datetime import date
 from django.core.exceptions import PermissionDenied
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 
 @login_required
-def diary_view(request):
+def diary_view(request, username=None):
+    # Если username указан, показываем дневник друга, иначе - свой
+    if username:
+        viewed_user = get_object_or_404(User, username=username)
+        # Проверяем, является ли пользователь другом
+        if viewed_user != request.user and not request.user.friends.filter(pk=viewed_user.pk).exists():
+            raise PermissionDenied("Вы можете просматривать дневник только своих друзей.")
+    else:
+        viewed_user = request.user
+    
     selected_date = request.GET.get('date', str(date.today()))
     try:
         from datetime import datetime
@@ -15,13 +27,16 @@ def diary_view(request):
     except (ValueError, TypeError):
         selected_date = date.today()
     
-    entries = FoodEntry.objects.filter(user=request.user, date=selected_date).order_by('meal_type')
+    entries = FoodEntry.objects.filter(user=viewed_user, date=selected_date).order_by('meal_type')
     total_calories = sum(entry.calories for entry in entries)
+    is_own_diary = viewed_user == request.user
 
     return render(request, 'diary/diary.html', {
         'entries': entries,
         'selected_date': selected_date,
         'total_calories': total_calories,
+        'viewed_user': viewed_user,
+        'is_own_diary': is_own_diary,
     })
 
 
