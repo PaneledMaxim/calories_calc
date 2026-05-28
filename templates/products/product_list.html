@@ -14,8 +14,8 @@
             <thead>
                 <tr>
                     <th>Название</th>
-                    <th style="color: #d32f2f;">Ккал/100г</th>
-                    <th style="color: #666;">Б/Ж/У</th>
+                    <th>Ккал/100г</th>
+                    <th>Б/Ж/У</th>
                     <th>Действия</th>
                 </tr>
             </thead>
@@ -23,8 +23,8 @@
                 {% for product in products %}
                     <tr>
                         <td>{{ product.name }}</td>
-                        <td style="color: #d32f2f;">{{ product.calories_per_100g }}</td>
-                        <td style="color: #666;">{{ product.protein_per_100g }}/{{ product.fat_per_100g }}/{{ product.carbs_per_100g }}</td>
+                        <td>{{ product.calories_per_100g }}</td>
+                        <td>{{ product.protein_per_100g }}/{{ product.fat_per_100g }}/{{ product.carbs_per_100g }}</td>
                         <td>
                             {% if product.can_edit %}
                                 <a href="{% url 'products:edit' product.id %}" style="color: #1976d2; text-decoration: none; margin-right: 10px;">Редакт.</a>
