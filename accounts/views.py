@@ -50,7 +50,7 @@ def edit_profile_view(request):
 @login_required
 def users_list_view(request):
     query = request.GET.get("q", "").strip()
-    users = CustomUser.objects.all().order_by("username")
+    users = CustomUser.searchable().order_by("username")
     friend_ids = set(request.user.friends.values_list("id", flat=True))
 
     if query:
@@ -86,8 +86,12 @@ def profile_detail_view(request, username):
             "profile_user": profile_user,
             "is_own_profile": request.user == profile_user,
             "is_friend": is_friend,
-            "can_add_friend": request.user != profile_user and not is_friend,
-            "friends": profile_user.friends.order_by("username"),
+            "can_add_friend": (
+                request.user != profile_user
+                and not is_friend
+                and profile_user.can_be_added_as_friend()
+            ),
+            "friends": profile_user.friends.searchable().order_by("username"),
         },
     )
 
@@ -98,10 +102,13 @@ def add_friend_view(request, username):
 
     if friend == request.user:
         messages.warning(request, "Нельзя добавить в друзья самого себя.")
-    else:
-        request.user.friends.add(friend)
-        messages.success(request, f"Пользователь {friend.username} добавлен в друзья.")
+        return redirect("accounts:users_list")
+    if not friend.can_be_added_as_friend():
+        messages.error(request, "Этого пользователя нельзя добавить в друзья.")
+        return redirect("accounts:users_list")
 
+    request.user.friends.add(friend)
+    messages.success(request, f"Пользователь {friend.username} добавлен в друзья.")
     return redirect("accounts:profile_detail", username=friend.username)
 
 

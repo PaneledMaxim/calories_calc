@@ -25,5 +25,13 @@ class CustomUser(AbstractUser):
     weight = models.DecimalField("Вес, кг", max_digits=5, decimal_places=2, blank=True, null=True)
     friends = models.ManyToManyField("self", blank=True)
 
+    @classmethod
+    def searchable(cls):
+        """Пользователи, которых можно искать и добавлять в друзья (без админов)."""
+        return cls.objects.filter(is_superuser=False, is_staff=False)
+
+    def can_be_added_as_friend(self):
+        return not self.is_superuser and not self.is_staff
+
     def __str__(self):
         return self.username

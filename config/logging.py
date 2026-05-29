@@ -1,5 +1,28 @@
+import os
 from pathlib import Path
+
 BASE_DIR = Path(__file__).resolve().parent.parent
+ON_RENDER = os.environ.get("RENDER", "").lower() in ("1", "true", "yes")
+
+_handlers = {
+    "console": {
+        "level": "DEBUG",
+        "class": "logging.StreamHandler",
+        "formatter": "simple",
+    },
+}
+
+if not ON_RENDER:
+    _handlers["file"] = {
+        "level": "DEBUG",
+        "class": "logging.FileHandler",
+        "formatter": "verbose",
+        "filename": BASE_DIR / "django.log",
+    }
+
+_default_handlers = ["console"] if ON_RENDER else ["console", "file"]
+_server_handlers = ["console"] if ON_RENDER else ["console", "file"]
+_request_handlers = ["console"] if ON_RENDER else ["file"]
 
 LOGGING = {
     'version': 1,
@@ -19,49 +42,30 @@ LOGGING = {
             'style': '{',
         },
     },
-    'handlers': {
-        'console': {
-            'level': 'DEBUG',
-            'class': 'logging.StreamHandler',
-            'formatter': 'simple'
-        },
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'formatter': 'verbose',
-            'filename': BASE_DIR / 'django.log'
-        },
-        'mail_admins': {
-            'level': 'ERROR',
-            'filters': ['require_debug_false'],
-            'class': 'django.utils.log.AdminEmailHandler',
-            'include_html': True,
-            'formatter': 'verbose',
-        },
-    },
+    'handlers': _handlers,
     'loggers': {
         '': {
             'level': 'WARNING',
-            'handlers': ['console', 'file', 'mail_admins'],
+            'handlers': _default_handlers,
         },
         'django.request': {
             'level': 'WARNING',
-            'handlers': ['file'],
+            'handlers': _request_handlers,
             'propagate': False,
         },
         'django.server': {
             'level': 'INFO',
-            'handlers': ['console', 'file', 'mail_admins'],
+            'handlers': _server_handlers,
             'propagate': False,
         },
         'django': {
             'level': 'INFO',
             'handlers': ['console'],
-            'propagate': False, # чтобы не попадали в WARNING
+            'propagate': False,
         },
         'django.template': {
             'level': 'DEBUG',
-            'handlers': ['file'],
+            'handlers': _request_handlers,
             'propagate': False,
         },
     },

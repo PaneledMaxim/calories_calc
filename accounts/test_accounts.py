@@ -102,6 +102,40 @@ def test_users_list_search_filters_users(client, user, friend, query, expected_u
 
 
 @pytest.mark.django_db
+def test_users_list_excludes_admin_accounts(client, user, django_user_model):
+    django_user_model.objects.create_superuser(
+        username="admin",
+        email="admin@example.com",
+        phone="+79990000099",
+        password="AdminPass123!",
+    )
+    client.force_login(user)
+
+    response = client.get(reverse("accounts:users_list"))
+
+    usernames = [u.username for u in response.context["users"]]
+    assert response.status_code == 200
+    assert "admin" not in usernames
+
+
+@pytest.mark.django_db
+def test_add_friend_view_blocks_admin_account(client, user, django_user_model):
+    admin = django_user_model.objects.create_superuser(
+        username="admin",
+        email="admin@example.com",
+        phone="+79990000099",
+        password="AdminPass123!",
+    )
+    client.force_login(user)
+
+    response = client.get(reverse("accounts:add_friend", kwargs={"username": admin.username}))
+
+    assert response.status_code == 302
+    assert response.url == reverse("accounts:users_list")
+    assert not user.friends.filter(pk=admin.pk).exists()
+
+
+@pytest.mark.django_db
 def test_custom_user_phone_validator_raises_validation_error():
     bad_user = CustomUser(
         username="broken_phone",
