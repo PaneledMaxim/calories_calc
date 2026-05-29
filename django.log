@@ -296,3 +296,60 @@ Traceback (most recent call last):
         "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
     )
 django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-29 17:02:26,850 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-29 17:02:59,826 django.request log.py (line 249) log_message Forbidden (Permission denied): /diary/petya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\diary\views.py", line 19, in diary_view
+    raise PermissionDenied("¬ы можете просматривать дневник только своих друзей.")
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать дневник только своих друзей.
+WARNING 2026-05-29 17:03:07,324 django.request log.py (line 249) log_message Forbidden (Permission denied): /diary/1/delete/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\diary\views.py", line 69, in delete_food_entry_view
+    raise PermissionDenied("¬ы можете удал€ть только свои записи.")
+django.core.exceptions.PermissionDenied: ¬ы можете удал€ть только свои записи.
+WARNING 2026-05-29 17:03:18,190 django.request log.py (line 249) log_message Forbidden (Permission denied): /products/1/edit/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\products\views.py", line 36, in edit_product_view
+    raise PermissionDenied("” вас нет прав на редактирование этого продукта")
+django.core.exceptions.PermissionDenied: ” вас нет прав на редактирование этого продукта
+WARNING 2026-05-29 17:03:23,835 django.request log.py (line 249) log_message Forbidden (Permission denied): /products/1/delete/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\products\views.py", line 54, in delete_product_view
+    raise PermissionDenied("” вас нет прав на удаление этого продукта")
+django.core.exceptions.PermissionDenied: ” вас нет прав на удаление этого продукта
