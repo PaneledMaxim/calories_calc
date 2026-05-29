@@ -91,7 +91,9 @@ def profile_detail_view(request, username):
                 and not is_friend
                 and profile_user.can_be_added_as_friend()
             ),
-            "friends": profile_user.friends.searchable().order_by("username"),
+            "friends": profile_user.friends.filter(
+                is_superuser=False, is_staff=False
+            ).order_by("username"),
         },
     )
 
