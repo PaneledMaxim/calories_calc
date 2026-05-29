@@ -205,3 +205,94 @@ Traceback (most recent call last):
         "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
     )
 django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-29 15:41:05,328 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-29 15:41:41,360 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-29 15:48:14,729 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-29 15:52:46,949 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-29 16:05:22,568 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-29 16:14:37,454 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.
+WARNING 2026-05-29 16:22:14,263 django.request log.py (line 249) log_message Forbidden (Permission denied): /profile/vasya/
+Traceback (most recent call last):
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\petri\Desktop\Daniil\DjMethod\calories_calc\accounts\views.py", line 78, in profile_detail_view
+    raise PermissionDenied(
+        "¬ы можете просматривать только свою собственную страницу и профили своих друзей."
+    )
+django.core.exceptions.PermissionDenied: ¬ы можете просматривать только свою собственную страницу и профили своих друзей.

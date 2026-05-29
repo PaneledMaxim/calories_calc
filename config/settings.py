@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     "accounts",
     "products",
     "diary",
-    "recipes",
 ]
 
 MIDDLEWARE = [
